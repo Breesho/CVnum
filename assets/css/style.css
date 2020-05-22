@@ -55,7 +55,7 @@ svg {
 }
 ::selection {
   background-color: #beebe9;
-  color: white;
+  color: black;
 }
 html,
 body {
@@ -265,7 +265,7 @@ header nav#navtablet .open_menu {
 section#me {
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: relative;
   text-align: left;
@@ -467,6 +467,12 @@ footer div#containercontactfooter ul li a i {
   }
   section#expertise div#global-container-expertise .container-expertise:before {
     top: -20px;
+  }
+  footer div#containercontactfooter ul {
+    flex-wrap: wrap;
+  }
+  footer div#containercontactfooter ul li {
+    margin: 10px 20px;
   }
 }
 @media screen and (max-width: 600px) {
