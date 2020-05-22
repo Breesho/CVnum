@@ -79,8 +79,7 @@ body {
 }
 section {
   min-height: 50%;
-  text-align: center;
-  padding: 50px 0px;
+  padding: 100px 0px;
 }
 section:nth-child(even) {
   background-color: whitesmoke;
@@ -209,7 +208,7 @@ header nav#navtablet .style-click #button_burger span:nth-of-type(1) {
 }
 header nav#navtablet .style-click #button_burger span:nth-of-type(2) {
   background-color: #396afc !important;
-  width: 0%!important;
+  width: 0% !important;
 }
 header nav#navtablet .style-click #button_burger span:nth-of-type(3) {
   bottom: 0;
@@ -250,7 +249,7 @@ header nav#navtablet #menu_burger ul li a:hover {
   color: black;
 }
 header nav#navtablet .open_menu {
-  right: 0%!important;
+  right: 0% !important;
   transition: all 1s;
 }
 .header-scroll {
@@ -357,14 +356,48 @@ section#me div#container-mouse p {
   font-size: 1.5rem;
   color: white;
 }
+section#skill div.title-section {
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  text-align: center;
+}
+section#skill div#global-container-skill {
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+section#skill div#global-container-skill h2 {
+  color: #2948ff;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+section#skill div#global-container-skill h3 {
+  color: black;
+  list-style: none;
+  font-weight: 400;
+}
+section#skill div#global-container-skill div.text {
+  width: 100%;
+}
+section#skill div#global-container-skill div.comp {
+  width: calc(25% - 20px);
+  margin: 10px;
+  padding: 10px;
+  border: solid 2px #2948ff;
+}
 section#formation div.title-section {
   margin: 0 auto;
   width: 90%;
   height: auto;
+  text-align: center;
 }
 section#formation div#global-container-formation {
   margin: 0 auto;
-  width: 60%;
+  width: 80%;
   height: auto;
 }
 section#formation div#global-container-formation .container-formation {
@@ -411,12 +444,12 @@ section#formation div#global-container-formation .container-formation .formation
   width: 20%;
   height: auto;
 }
-section#formation div#global-container-formation .container-formation .formation-img-manu div#formation-container-img {
+section#formation div#global-container-formation .container-formation .formation-img-manu div.formation-container-img {
   width: 100px;
   height: 100px;
   margin: 0 auto;
 }
-section#formation div#global-container-formation .container-formation .formation-img-manu div#formation-container-img figure {
+section#formation div#global-container-formation .container-formation .formation-img-manu div.formation-container-img figure {
   width: 100px;
   height: 100px;
   background-size: contain;
@@ -429,12 +462,12 @@ section#formation div#global-container-formation .container-formation .formation
   height: auto;
   order: 2;
 }
-section#formation div#global-container-formation .container-formation .formation-img-afpa div#formation-container-img {
+section#formation div#global-container-formation .container-formation .formation-img-afpa div.formation-container-img {
   width: 100px;
   height: 100px;
   margin: 0 auto;
 }
-section#formation div#global-container-formation .container-formation .formation-img-afpa div#formation-container-img figure {
+section#formation div#global-container-formation .container-formation .formation-img-afpa div.formation-container-img figure {
   width: 100px;
   height: 100px;
   background-size: contain;
@@ -446,11 +479,13 @@ section#expertise div.title-section {
   margin: 0 auto;
   width: 90%;
   height: auto;
+  text-align: center;
 }
 section#expertise div#global-container-expertise {
   margin: 0 auto;
   width: 90%;
   height: auto;
+  text-align: center;
 }
 section#expertise div#global-container-expertise .container-expertise {
   width: 100%;
@@ -517,6 +552,11 @@ footer div#containercontactfooter ul li a:hover {
 footer div#containercontactfooter ul li a i {
   font-size: 25px;
 }
+@media screen and (max-width: 1440px) {
+  section#skill div#global-container-skill div.comp {
+    width: calc(50% - 20px);
+  }
+}
 @media screen and (max-width: 1200px) {
   section#me div.container-flex {
     padding-left: 0rem;
@@ -580,6 +620,11 @@ footer div#containercontactfooter ul li a i {
   }
   footer div#containercontactfooter ul li {
     margin: 10px 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  section#skill div#global-container-skill div.comp {
+    width: calc(100% - 20px);
   }
 }
 @media screen and (max-height: 700px) {
