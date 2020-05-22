@@ -148,18 +148,14 @@ header {
     a.logo-Acc {
         width:30%;
         height: 50px;
-        svg {
-            width: 60px;
-            height:50px;
-
-
-        .cls-1 {
-            fill: white;
-        }
-        .cls-2 {
-         fill: white;
-        }
-    }
+      figure {
+          background-image: url(../imgs/logo.png);
+          width: 75px;
+          height: 50px;
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+      }
 }
 
     nav#navdesktop {
@@ -431,40 +427,68 @@ div.container-flex {
         }
     }
 }
-section#training {
-    display: flex;
-    flex-wrap: wrap;
+
+
+section#formation {
     div.title-section {
         margin: 0 auto;
         width: 90%;
         height: auto;
-
     }
-    #container-training-manu {
-        width: 90%;
-        height: auto;
+    div#global-container-formation {
         margin: 0 auto;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        display: flex;
-        align-items: center;
+        width: 60%;
+        height: auto;
 
-        div#training-img-manu {
-            width: 20%;
-            height: auto;
-            justify-content: center;
+        .container-formation {
+            width: 100%;
+            min-height: 150px;
+            margin-top: 50px;
+            position: relative;
+            display: flex;
             align-items: center;
+            .formation-text {
+                margin: 0 auto;
+                width: 80%;
+                h2 {
+                    font-weight: 300;
+                    margin-bottom: 10px;
+                }
+                h3 {
+                    font-weight: 300;
+                    color:  #2948ff;
+                    margin-bottom: 10px;
+                }
+                h4 {
+                    font-weight: 300;
+                    text-decoration: underline;
+                }
+                div.formation-text {
+                    content: '';
+                    width: 25px;
+                    height: 25px;
+                    background-color: #42e6a4;
+                    position: absolute;
+                    border-radius: 50%;
+                    left: 0px;
+                }
+            }
+            &:nth-of-type(1) {
+                text-align: left;
 
-            div#training-container-img-manu {
-                width: 200px;
-                height: 200px;
-                border: solid 5px #2948ff;
-               
-                justify-content: center;
-                align-items: center;
-                position: relative;
+            }
+            &:nth-of-type(2) {
+                text-align: right;
+            }
+            .formation-img-manu {
+                width: 20%;
+                height: auto;
+            div#formation-container-img{
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;
 
-                figure {
+             figure {
                     width: 100px;
                     height: 100px;
                     background-size: contain;
@@ -474,64 +498,17 @@ section#training {
                 }
             }
 
-            div#training-container-img-manu:after {
-                content: '';
-                width: 5px;
-                height: 50%;
-                background-color: #2948ff;
-                position: absolute;
-                
-                right: -30px;
-            }
-        }
+          }
+          .formation-img-afpa {
+            width: 20%;
+            height: auto;
+            order: 2;
+        div#formation-container-img{
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
 
-        div#training-text-manu {
-            width: 70%;
-            text-align: left;
-            h2 {
-                font-weight: 300;
-            }
-            h3 {
-                font-weight: 300;
-                color:  #2948ff;
-            }
-            h4 {
-                font-weight: 300;
-                text-decoration: underline;
-            }
-        }
-
-    }
-
-
-}
-
-#container-training-afpa {
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    flex-direction: row-reverse;
-    
-    display: flex;
-    align-items: center;
-    div#training-img-afpa {
-        width: 20%;
-        height: auto;
-        justify-content: center;
-        align-items: center;
-
-        div#training-container-img-afpa {
-            width: 200px;
-            height: 200px;
-            border: solid 5px #2948ff;
-          
-            justify-content: center;
-            align-items: center;
-            position: relative;
-
-            figure {
+         figure {
                 width: 100px;
                 height: 100px;
                 background-size: contain;
@@ -541,39 +518,25 @@ section#training {
             }
         }
 
-        div#training-container-img-afpa:before {
-            content: '';
-            width: 5px;
-            height: 50%;
-            background-color: #2948ff;
-            position: absolute;
-          
-            left: -30px;
-        }
+      }
+
     }
 
-    div#training-text-afpa {
-        width: 70%;
-        text-align: right;
-        h2 {
-            font-weight: 300;
-        }
-        h3 {
-            font-weight: 300;
-            color:  #2948ff;
-        }
-        h4 {
-            font-weight: 300;
-            text-decoration: underline;
-        }
+        // .container-formation:before {
+        //     content: '';
+        //     position: absolute;
+        //     width: 5%;
+        //     height:5px;
+        //     left: 0;
+        //     right: 0;
+        //     margin: 0 auto;
+        //     top: 0px;
+
+        //     background-color: #2948ff;
+        // }
     }
 
 }
-
-
-
-
-
 
 section#expertise {
     div.title-section {
@@ -585,7 +548,7 @@ section#expertise {
         margin: 0 auto;
         width: 90%;
         height: auto;
-        
+
         .container-expertise {
             width: 100%;
             min-height: 150px;
@@ -678,6 +641,26 @@ footer {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    section#formation div#global-container-formation {
+        width: 90%;
+    }
+    section#formation div#global-container-formation .container-formation{
+        display: flex;
+        flex-wrap: wrap;
+       
+    }
+    section#formation div#global-container-formation .container-formation .formation-img-manu {
+        width: 100%;
+    }
+    section#formation div#global-container-formation .container-formation .formation-img-afpa {
+        width: 100%;
+        order: 1;
+    }
+    section#formation div#global-container-formation .container-formation .formation-text{
+        order: 2;
+    }
+}
 @media screen and (max-width: 768px) {
     header {
         padding-left: 2.5rem;
@@ -704,7 +687,7 @@ footer {
         padding: 5rem;
     }
     section#expertise div#global-container-expertise .container-expertise {
-        text-align: justify;
+        text-align: left;
     }
     section#expertise div#global-container-expertise .container-expertise:before {
         top: -20px;

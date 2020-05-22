@@ -102,15 +102,13 @@ header a.logo-Acc {
   width: 30%;
   height: 50px;
 }
-header a.logo-Acc svg {
-  width: 60px;
+header a.logo-Acc figure {
+  background-image: url(../imgs/logo.png);
+  width: 75px;
   height: 50px;
-}
-header a.logo-Acc svg .cls-1 {
-  fill: white;
-}
-header a.logo-Acc svg .cls-2 {
-  fill: white;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 header nav#navdesktop {
   display: flex;
@@ -359,39 +357,66 @@ section#me div#container-mouse p {
   font-size: 1.5rem;
   color: white;
 }
-section#training {
-  display: flex;
-  flex-wrap: wrap;
-}
-section#training div.title-section {
+section#formation div.title-section {
   margin: 0 auto;
   width: 90%;
   height: auto;
 }
-section#training #container-training-manu {
-  width: 90%;
-  height: auto;
+section#formation div#global-container-formation {
   margin: 0 auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  width: 60%;
+  height: auto;
+}
+section#formation div#global-container-formation .container-formation {
+  width: 100%;
+  min-height: 150px;
+  margin-top: 50px;
+  position: relative;
   display: flex;
   align-items: center;
 }
-section#training #container-training-manu div#training-img-manu {
+section#formation div#global-container-formation .container-formation .formation-text {
+  margin: 0 auto;
+  width: 80%;
+}
+section#formation div#global-container-formation .container-formation .formation-text h2 {
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+section#formation div#global-container-formation .container-formation .formation-text h3 {
+  font-weight: 300;
+  color: #2948ff;
+  margin-bottom: 10px;
+}
+section#formation div#global-container-formation .container-formation .formation-text h4 {
+  font-weight: 300;
+  text-decoration: underline;
+}
+section#formation div#global-container-formation .container-formation .formation-text div.formation-text {
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-color: #42e6a4;
+  position: absolute;
+  border-radius: 50%;
+  left: 0px;
+}
+section#formation div#global-container-formation .container-formation:nth-of-type(1) {
+  text-align: left;
+}
+section#formation div#global-container-formation .container-formation:nth-of-type(2) {
+  text-align: right;
+}
+section#formation div#global-container-formation .container-formation .formation-img-manu {
   width: 20%;
   height: auto;
-  justify-content: center;
-  align-items: center;
 }
-section#training #container-training-manu div#training-img-manu div#training-container-img-manu {
-  width: 200px;
-  height: 200px;
-  border: solid 5px #2948ff;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+section#formation div#global-container-formation .container-formation .formation-img-manu div#formation-container-img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
 }
-section#training #container-training-manu div#training-img-manu div#training-container-img-manu figure {
+section#formation div#global-container-formation .container-formation .formation-img-manu div#formation-container-img figure {
   width: 100px;
   height: 100px;
   background-size: contain;
@@ -399,83 +424,23 @@ section#training #container-training-manu div#training-img-manu div#training-con
   background-repeat: no-repeat;
   background-image: url(../imgs/logo_formation/logo_La_Manu_formation.png);
 }
-section#training #container-training-manu div#training-img-manu div#training-container-img-manu:after {
-  content: '';
-  width: 5px;
-  height: 50%;
-  background-color: #2948ff;
-  position: absolute;
-  right: -30px;
-}
-section#training #container-training-manu div#training-text-manu {
-  width: 70%;
-  text-align: left;
-}
-section#training #container-training-manu div#training-text-manu h2 {
-  font-weight: 300;
-}
-section#training #container-training-manu div#training-text-manu h3 {
-  font-weight: 300;
-  color: #2948ff;
-}
-section#training #container-training-manu div#training-text-manu h4 {
-  font-weight: 300;
-  text-decoration: underline;
-}
-#container-training-afpa {
-  width: 90%;
-  height: auto;
-  margin: 0 auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  flex-direction: row-reverse;
-  display: flex;
-  align-items: center;
-}
-#container-training-afpa div#training-img-afpa {
+section#formation div#global-container-formation .container-formation .formation-img-afpa {
   width: 20%;
   height: auto;
-  justify-content: center;
-  align-items: center;
+  order: 2;
 }
-#container-training-afpa div#training-img-afpa div#training-container-img-afpa {
-  width: 200px;
-  height: 200px;
-  border: solid 5px #2948ff;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+section#formation div#global-container-formation .container-formation .formation-img-afpa div#formation-container-img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
 }
-#container-training-afpa div#training-img-afpa div#training-container-img-afpa figure {
+section#formation div#global-container-formation .container-formation .formation-img-afpa div#formation-container-img figure {
   width: 100px;
   height: 100px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../imgs/logo_formation/Logo_Afpa.png);
-}
-#container-training-afpa div#training-img-afpa div#training-container-img-afpa:before {
-  content: '';
-  width: 5px;
-  height: 50%;
-  background-color: #2948ff;
-  position: absolute;
-  left: -30px;
-}
-#container-training-afpa div#training-text-afpa {
-  width: 70%;
-  text-align: right;
-}
-#container-training-afpa div#training-text-afpa h2 {
-  font-weight: 300;
-}
-#container-training-afpa div#training-text-afpa h3 {
-  font-weight: 300;
-  color: #2948ff;
-}
-#container-training-afpa div#training-text-afpa h4 {
-  font-weight: 300;
-  text-decoration: underline;
 }
 section#expertise div.title-section {
   margin: 0 auto;
@@ -562,6 +527,25 @@ footer div#containercontactfooter ul li a i {
     padding: 0;
   }
 }
+@media screen and (max-width: 1000px) {
+  section#formation div#global-container-formation {
+    width: 90%;
+  }
+  section#formation div#global-container-formation .container-formation {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section#formation div#global-container-formation .container-formation .formation-img-manu {
+    width: 100%;
+  }
+  section#formation div#global-container-formation .container-formation .formation-img-afpa {
+    width: 100%;
+    order: 1;
+  }
+  section#formation div#global-container-formation .container-formation .formation-text {
+    order: 2;
+  }
+}
 @media screen and (max-width: 768px) {
   header {
     padding-left: 2.5rem;
@@ -586,7 +570,7 @@ footer div#containercontactfooter ul li a i {
     padding: 5rem;
   }
   section#expertise div#global-container-expertise .container-expertise {
-    text-align: justify;
+    text-align: left;
   }
   section#expertise div#global-container-expertise .container-expertise:before {
     top: -20px;
