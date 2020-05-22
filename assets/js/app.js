@@ -5,15 +5,15 @@ window.addEventListener('scroll', function() {
     let mouse = document.getElementById('container-mouse');
     let domTop = document.documentElement.scrollTop;
     
-    if (domTop > 200) {
+    if (domTop > 100) {
         idButton.classList.add('header-scroll');
         mouse.style.opacity = 0;
-        mouse.style.transition = '0.5s';
+        mouse.style.transition = '0.25s';
     }
     else {
         idButton.classList.remove('header-scroll');
         mouse.style.opacity = 1;
-        mouse.style.transition = '0.5s';
+        mouse.style.transition = '0.25s';
     }
 });
 

@@ -359,6 +359,129 @@ section#me div#container-mouse p {
   font-size: 1.5rem;
   color: white;
 }
+section#training {
+  display: flex;
+  flex-wrap: wrap;
+}
+section#training div.title-section {
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+}
+section#training #container-training-manu {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+section#training #container-training-manu div#training-img-manu {
+  width: 20%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+section#training #container-training-manu div#training-img-manu div#training-container-img-manu {
+  width: 200px;
+  height: 200px;
+  border: solid 5px #2948ff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+section#training #container-training-manu div#training-img-manu div#training-container-img-manu figure {
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../imgs/logo_formation/logo_La_Manu_formation.png);
+}
+section#training #container-training-manu div#training-img-manu div#training-container-img-manu:after {
+  content: '';
+  width: 5px;
+  height: 50%;
+  background-color: #2948ff;
+  position: absolute;
+  right: -30px;
+}
+section#training #container-training-manu div#training-text-manu {
+  width: 70%;
+  text-align: left;
+}
+section#training #container-training-manu div#training-text-manu h2 {
+  font-weight: 300;
+}
+section#training #container-training-manu div#training-text-manu h3 {
+  font-weight: 300;
+  color: #2948ff;
+}
+section#training #container-training-manu div#training-text-manu h4 {
+  font-weight: 300;
+  text-decoration: underline;
+}
+#container-training-afpa {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  flex-direction: row-reverse;
+  display: flex;
+  align-items: center;
+}
+#container-training-afpa div#training-img-afpa {
+  width: 20%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+#container-training-afpa div#training-img-afpa div#training-container-img-afpa {
+  width: 200px;
+  height: 200px;
+  border: solid 5px #2948ff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#container-training-afpa div#training-img-afpa div#training-container-img-afpa figure {
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../imgs/logo_formation/Logo_Afpa.png);
+}
+#container-training-afpa div#training-img-afpa div#training-container-img-afpa:before {
+  content: '';
+  width: 5px;
+  height: 50%;
+  background-color: #2948ff;
+  position: absolute;
+  left: -30px;
+}
+#container-training-afpa div#training-text-afpa {
+  width: 70%;
+  text-align: right;
+}
+#container-training-afpa div#training-text-afpa h2 {
+  font-weight: 300;
+}
+#container-training-afpa div#training-text-afpa h3 {
+  font-weight: 300;
+  color: #2948ff;
+}
+#container-training-afpa div#training-text-afpa h4 {
+  font-weight: 300;
+  text-decoration: underline;
+}
+section#expertise div.title-section {
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+}
 section#expertise div#global-container-expertise {
   margin: 0 auto;
   width: 90%;
@@ -473,6 +596,18 @@ footer div#containercontactfooter ul li a i {
   }
   footer div#containercontactfooter ul li {
     margin: 10px 20px;
+  }
+}
+@media screen and (max-height: 700px) {
+  section#me {
+    height: auto;
+    padding: 100px 0px;
+  }
+  section#me div#social {
+    bottom: 0rem;
+  }
+  section#me div#container-mouse {
+    bottom: 0rem;
   }
 }
 @media screen and (max-width: 600px) {
