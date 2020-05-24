@@ -96,7 +96,7 @@ body {
 
 section {
 
-    min-height:50%;
+    min-height:80%;
     padding: 100px 0px;
 }
 
@@ -451,29 +451,59 @@ section#skill {
         display: flex;
         flex-wrap: wrap;
         padding-top: 50px;
-        h2 {
-            color: #2948ff;
-            text-decoration: underline;
-            margin-bottom: 10px;
-        }
-        h3 {
-            color: black;
-            list-style: none;
-            font-weight: 400;
-        }
+        
         div.text {
             width: 100%;
+            text-align: center;
+            padding-bottom: 50px;
         }
         div.comp {
             width: ~"calc(25% - 20px)";
             margin: 10px;
             padding: 10px;
             border: solid 2px #2948ff ;
-            
+            h2 {
+                color: #2948ff;
+                text-decoration: underline;
+                margin-bottom: 10px;
+            }
+            h3 {
+                color: black;
+                list-style: none;
+                font-weight: 400;
+            }
         }
     }
 }
 
+section#project {
+    width: 100%;
+    div.title-section {
+        margin: 0 auto;
+        width: 90%;
+        height: auto;
+        text-align: center;
+        h3 {
+            font-weight: 300;
+        }
+    }
+    div#global-container-project {
+        margin: 0 auto;
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        
+        .project-container {
+            margin: 10px;
+            a {
+               display: block;
+                color: #2948ff;
+            }
+        }
+    }
+}
 section#formation {
     div.title-section {
         margin: 0 auto;
@@ -719,10 +749,12 @@ footer {
 
     section#formation div#global-container-formation .container-formation .formation-img-manu {
         width: 100%;
+        margin-bottom: 50px;
     }
 
     section#formation div#global-container-formation .container-formation .formation-img-afpa {
         width: 100%;
+        margin-bottom: 50px;
         order: 1;
     }
 
@@ -781,6 +813,9 @@ footer {
 @media screen and (max-width: 700px) {
     section#skill div#global-container-skill div.comp {
         width: calc(100% - 20px);
+    }
+    section#skill div#global-container-skill {
+        width: 90%;
     }
 }
 @media screen and (max-height: 700px) {
