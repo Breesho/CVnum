@@ -21,14 +21,23 @@ window.addEventListener('scroll', function() {
 
 
 
-let idButton = document.getElementById("burger");
+let idButtonopen = document.getElementById("burger");
+let idButtonclose = document.querySelectorAll('.closeburger');
 
-idButton.addEventListener("click", function() {
+idButtonopen.addEventListener("click", function() {
+    openclosemenu() 
+})
+idButtonclose[0].addEventListener("click", function() {
+    openclosemenu() 
+})
+idButtonclose[1].addEventListener("click", function() {
+    openclosemenu() 
+})
+
+function openclosemenu() {
     let burgeractive = document.getElementById("burger");
     burgeractive.classList.toggle("style-click");
 
     let menuactive = document.getElementById("menu_burger");
     menuactive.classList.toggle("open_menu"); 
-})
-
-    
+}
