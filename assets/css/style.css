@@ -363,7 +363,7 @@ section#me div#container-mouse p {
 }
 section#skill div.title-section {
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
   height: auto;
   text-align: center;
 }
@@ -377,10 +377,14 @@ section#skill div#global-container-skill {
 }
 section#skill div#global-container-skill .container-text-skill {
   width: 100%;
+  line-height: 30px;
+}
+section#skill div#global-container-skill .container-text-skill b {
+  color: #2948ff;
 }
 section#skill div#global-container-skill .container-text-skill div.text-skill {
   width: 100%;
-  text-align: center;
+  text-align: justify;
   padding-bottom: 50px;
 }
 section#skill div#global-container-skill .container-comp-skill {
@@ -412,12 +416,18 @@ section#project {
 }
 section#project div.title-section {
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
   height: auto;
   text-align: center;
 }
-section#project div.title-section h3 {
+section#project div.title-section b {
+  color: #2948ff;
+}
+section#project div.title-section p {
   font-weight: 300;
+  text-align: justify;
+  margin-top: 50px;
+  line-height: 30px;
 }
 section#project div#global-container-project {
   margin: 0 auto;
@@ -428,6 +438,9 @@ section#project div#global-container-project {
   padding-top: 50px;
 }
 section#project div#global-container-project .project-container {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
   margin: 10px;
 }
 section#project div#global-container-project .project-container a {
@@ -699,6 +712,9 @@ footer div#containercontactfooter ul li a i {
   }
   section#skill div#global-container-skill {
     width: 90%;
+  }
+  section#project div#global-container-project .project-container {
+    width: 100%;
   }
 }
 @media screen and (max-height: 800px) {
